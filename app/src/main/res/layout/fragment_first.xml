@@ -10,6 +10,8 @@
         android:id="@+id/textview_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layerType="none"
         android:text="Welcome to Gameworlds"
         android:textColor="#3F51B5"
         android:textSize="30sp"
@@ -33,11 +35,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="300dp"
+        android:layout_width="517dp"
+        android:layout_height="753dp"
         android:scaleType="centerCrop"
         android:src="@drawable/main_background_dice"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
