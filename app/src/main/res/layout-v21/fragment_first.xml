@@ -20,13 +20,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" tools:targetApi="lollipop" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="750dp"
-        android:contentDescription="Background"
         android:scaleType="centerCrop"
         android:src="@drawable/main_background_dice"
         app:layout_constraintBottom_toBottomOf="parent"
