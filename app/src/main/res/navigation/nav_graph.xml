@@ -24,5 +24,17 @@
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_nineislandsmain"
+            app:destination="@id/nineislandsmain" />
+    </fragment>
+    <fragment
+        android:id="@+id/nineislandsmain"
+        android:name="com.example.gameworlds.nineislandsmain"
+        android:label="fragment_nineislandsmain"
+        tools:layout="@layout/fragment_nineislandsmain" >
+        <action
+            android:id="@+id/action_nineislandsmain_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
     </fragment>
 </navigation>
