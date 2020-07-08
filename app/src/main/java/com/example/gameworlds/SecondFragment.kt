@@ -5,8 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.content.Intent
 import android.widget.Button
+import android.widget.ImageButton
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
+import kotlinx.android.synthetic.main.fragment_first.view.*
+import kotlinx.android.synthetic.main.fragment_second.*
+import kotlinx.android.synthetic.main.fragment_second.view.*
+import com.example.gameworlds.R.id.nineislandsbutton as button_second1
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
@@ -18,14 +25,13 @@ class SecondFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_second, container, false)
+        val view2 =  inflater.inflate(R.layout.fragment_second, container, false)
+        view2.nineislandsbutton.setOnClickListener { Navigation.findNavController(view2).navigate(R.id.action_SecondFragment_to_nineislandsmain) }
+        return view2
+
+
+
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.button_second).setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
-        }
-    }
 }
