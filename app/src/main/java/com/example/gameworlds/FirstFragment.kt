@@ -22,7 +22,7 @@ class FirstFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view1 =  inflater.inflate(R.layout.fragment_first, container, false)
-        view1.button_first.setOnClickListener { Navigation.findNavController(view1).navigate(R.id.action_FirstFragment_to_SecondFragment) }
+        view1.buttonEnterAtBenefit.setOnClickListener { Navigation.findNavController(view1).navigate(R.id.action_FirstFragment_to_SecondFragment) }
         return view1
     }
 
