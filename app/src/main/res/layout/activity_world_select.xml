@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground_dice_v_2"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_result"
+        android:text="SELECT A WORLD"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_congratulations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TO EXPLORE"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_worldmap"
+        android:layout_width="wrap_content"
+        android:layout_height="275dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/the_nine_islands_v3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_prevWorld"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textColor="@color/colorPrimary"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:text="Previous World"
+            />
+        <Button
+            android:id="@+id/btn_nextWorld"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textColor="@color/colorPrimary"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:text="Next World"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_enterworld"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/white"
+        android:textColor="@color/colorPrimary"
+        android:text="ENTER THIS WORLD"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

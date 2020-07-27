@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/worldselect_bg"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_viewmapsandlore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIEW MAPS AND LORE"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    //OVERALL LEFT AND RIGHT COLUMNS
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+
+    //This is the Left side
+    //This is where the TEXT-VIEWS go
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_lore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Lore"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_worldMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="World Map"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_area1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Area1"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_area2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Area2"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_area3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Area3"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_area4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Area4"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_area5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Area5"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_area6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Area6"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_area7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Area7"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_area8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Area8"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    //This is the Right side
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_viewLore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="View"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn_viewWorldMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="View"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="View"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="View"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn_view3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="View"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn_view4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="View"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn_view5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="View"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn_view6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="View"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn_view7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="View"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn_view8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="View"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_downloadLore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Download"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/white"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+            <Button
+                android:id="@+id/btn_downloadWorldMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Download"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/white"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+            <Button
+                android:id="@+id/btn_download1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Download"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/white"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+            <Button
+                android:id="@+id/btn_download2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Download"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/white"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+            <Button
+                android:id="@+id/btn_download3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Download"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/white"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+            <Button
+                android:id="@+id/btn_download4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Download"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/white"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+            <Button
+                android:id="@+id/btn_download5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Download"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/white"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+            <Button
+                android:id="@+id/btn_download6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Download"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/white"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+            <Button
+                android:id="@+id/btn_download7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Download"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/white"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+            <Button
+                android:id="@+id/btn_download8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Download"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/white"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".08"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="horizontal" >
+        <Button
+            android:id="@+id/btn_returnWorldSelect"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:background="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:text="GO TO WORLD SELECT" />
+        <Button
+            android:id="@+id/btn_downloadAll"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:text="DOWNLOAD ALL" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

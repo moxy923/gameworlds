@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/worldselect_bg"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_result"
+        android:text="WELCOME TO THE ZONE:"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_zoneName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZONE NAME"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_areaMap"
+        android:layout_width="wrap_content"
+        android:layout_height="275dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/the_nine_islands_v3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_prevArea"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textColor="@color/colorPrimary"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:text="Previous Area"
+            />
+        <Button
+            android:id="@+id/btn_nextArea"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textColor="@color/colorPrimary"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:text="Next Area"
+            />
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_areaLore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:text="BLAHBLAHBLAH"
+        android:textSize="13sp"
+        android:textColor="@android:color/white">
+
+    </TextView>
+    <Button
+        android:id="@+id/btn_leaveAreaSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:background="@android:color/white"
+        android:textColor="@color/colorPrimary"
+        android:text="BACK TO AREA SELECT"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

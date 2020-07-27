@@ -1,28 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back_ground_dice_v_2"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_result"
+        android:text="WELCOME"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_congratulations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TO GAMEWORLDS!"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+
+    <Button
+        android:id="@+id/btn_enter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_marginTop="600dp"
+        android:background="@android:color/white"
+        android:text="ENTER WORLD SELECTION"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <include layout="@layout/content_main" />
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragment2"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/nav_graph" />
-
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>
